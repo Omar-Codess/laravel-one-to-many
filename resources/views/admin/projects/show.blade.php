@@ -8,6 +8,7 @@
             </a>
         </div>
         <h2 class="text-center">{{ $project->title }}</h2>
+        <p class="text-center">{{ $project->type ? $project->type->name : 'Nessuna tipologia' }}</p>
         <div class="mt-3 text-center">
             <img class="w-50" src="{{ asset('storage/' . $project->cover_image) }}" alt="">
         </div>
